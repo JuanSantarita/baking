@@ -1,9 +1,9 @@
 
 import React from "react";
-import Navbar from "./components/navbar";
+import Navbar from "../components/navbar";
 // import Homepage from "./components/homepage";
-import Carousel from './components/react-bootstrap/Carousel';
-import Card from './components/react-bootstrap/Card';
+//import Carousel from './react-bootstrap/Carousel';
+import Card from '../components/react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -13,9 +13,6 @@ function App() {
       <div class="row">
         <Navbar />
       </div>
-      <div class="homepage_carousel row">
-        <Carousel/>
-       </div>
        <div class="row">
         <Card/>
        </div>

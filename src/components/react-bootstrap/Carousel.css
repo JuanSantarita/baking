@@ -1,0 +1,32 @@
+
+img.carousel_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+}
+.homepage_carousel {
+  background-image: url("https://iili.io/HskYHV2.jpg");
+  height: 90vh;
+}
+
+.image_name {
+  font-size: 60px;
+  color: #000;
+  position: relative;
+  font-family: fantasy;
+}
+.carousel-caption {
+ top: 0%;
+}
+
+@media screen and (max-width: 768px) {
+  img.carousel_img {
+    margin-top: 15%;
+    width: inherit;
+  }
+
+  .image_name {
+    font-size: 40px;
+  }
+}

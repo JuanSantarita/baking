@@ -14,8 +14,11 @@ li {
   list-style: none;
 }
 a {
-  text-decoration: none;
-  color: rgb(204, 204, 204);
+  text-decoration: none !important;
+    font-size: 20px;
+    color: black !important;
+    font-family: fantasy;
+    font-weight: bold;
 }
 
 .nav {
@@ -23,7 +26,7 @@ a {
   align-items: center;
   justify-content: space-around;
   height: 10vh;
-  background: rgb(70 101 193);
+  background-image: url('https://iili.io/Hsv5OAb.jpg');
 }
 .nav__brand {
   text-transform: uppercase;
@@ -33,7 +36,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 3rem;
+  gap: 2rem;
+  margin-bottom: 0;
 }
 .nav__toggler {
   display: none;
@@ -42,7 +46,7 @@ a {
   width: 2.5rem;
   height: 0.2rem;
   margin: 0.4rem;
-  background: rgb(204, 204, 204);
+  background: black;
   transition: 0.3s ease-in;
 }
 
@@ -57,15 +61,29 @@ a {
     right: 0;
     height: 93vh;
     width: 50vw;
-    background: rgb(70 101 193);
+    background-image: url('https://iili.io/Hsv5OAb.jpg');
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
+
+    position: fixed;
+    top: 10vh;
+    right: 0;
+    height: 48vh;
+    width: 50vw;
+    background-image: url('https://iili.io/Hsv5OAb.jpg');
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    /* background-position-x: center; */
+    /* background-size: 350%; */
+    background-repeat: round;
   }
 }
 /* Active Class */
 .nav__active {
   transform: translateX(0%);
+  z-index: 2;
 }
 
 /* Toggle Icon Animation */

@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import  React, { useState } from "react";
 import "../navbar.css";
+import Nav from 'react-bootstrap/Nav';
+import {LinkContainer} from 'react-router-bootstrap'
 
 function Navbar() {
   const [active, setActive] = useState("nav__menu");
@@ -15,30 +17,31 @@ function Navbar() {
     } else setIcon("nav__toggler");
   };
   return (
-    <nav className="nav">
-      <a href="#" className="nav__brand">
-        Cake + Art
-      </a>
+    <nav className="nav"  defaultActiveKey="/home" >
+      <LinkContainer to="/home">
+         <a className="nav__brand">Cake + Art</a> 
+      </LinkContainer>
+      
       <ul className={active}>
         <li className="nav__item">
-          <a href="#" className="nav__link">
-            Fondant Cakes
-          </a>
+          <LinkContainer to="/fondant" className="nav__link">
+          <a className="nav__brand">Fondant Cakes</a> 
+        </LinkContainer>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__link">
-            Icing Cakes
-          </a>
+        <LinkContainer to="/icing">
+         <a className="nav__link">Icing Cakes</a> 
+        </LinkContainer>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__link">
-            Dessert Table
-          </a>
+          <LinkContainer to="/dessert">
+            <a className="nav__link">Dessert Table</a> 
+          </LinkContainer>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__link">
-            Contact
-          </a>
+          <LinkContainer to="/prices">
+            <a className="nav__link">Prices</a> 
+          </LinkContainer>
         </li>
       </ul>
       <div onClick={navToggle} className={icon}>
@@ -46,6 +49,7 @@ function Navbar() {
         <div className="line2"></div>
         <div className="line3"></div>
       </div>
+      
     </nav>
   );
 }
