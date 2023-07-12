@@ -28,7 +28,7 @@ ReactDOM.render(
   <React.StrictMode>
        <Router>
       <Routes>
-        <Route exact path="/home" element={<App />} />
+        <Route exact path="/" element={<App />} />
         <Route path="/fondant" element={<Fondant />} />
         <Route path="/icing" element={<Icing />} />
         <Route path="/dessert" element={<Dessert />} />
