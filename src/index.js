@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { browserHistory } from 'react-router'
 import "./index.css";
 import "./components/react-bootstrap/Carousel.css";
 import App from "./App";
-import * as serviceWorker from "./serviceWorker";
+// import * as serviceWorker from "./serviceWorker";
 
 // ReactDOM.render(<App />, document.getElementById("root"));
 
@@ -26,7 +27,7 @@ import Prices from './pages/prices';
 
 ReactDOM.render(
   <React.StrictMode>
-       <Router>
+       <Router history={browserHistory}>
       <Routes>
         <Route exact path="/" element={<App />} />
         <Route path="/fondant" element={<Fondant />} />
@@ -38,4 +39,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-serviceWorker.register();
+// serviceWorker.register();

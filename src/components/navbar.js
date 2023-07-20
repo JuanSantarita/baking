@@ -18,14 +18,14 @@ function Navbar() {
   };
   return (
     <nav className="nav"  defaultActiveKey="/home" >
-      <LinkContainer to="/home">
+      <LinkContainer to="/">
          <a className="nav__brand">Cake + Art</a> 
       </LinkContainer>
       
       <ul className={active}>
         <li className="nav__item">
           <LinkContainer to="/fondant" className="nav__link">
-          <a className="nav__brand">Fondant Cakes</a> 
+          <a className="nav__link">Fondant Cakes</a> 
         </LinkContainer>
         </li>
         <li className="nav__item">
