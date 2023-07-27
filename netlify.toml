@@ -1,4 +1,5 @@
-    [[redirects]]
-    from = "/*"
-    to = "/index.html"
-    status = 200
+[[redirects]]
+  from = "https://cakeplusart.netlify.app"
+  to = "https://cakeplusart.com"
+  status = 301
+  force = true

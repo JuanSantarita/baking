@@ -1,0 +1,40 @@
+.row-card {
+    width: 26% !important;
+  }
+
+  .card__link {
+    font-family: fantasy;
+    font-size: 50px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    color: #8b414c;
+  }
+  .card__link:hover {
+    color: #8b414c;
+    text-decoration: underline;
+  }
+
+  .Card__container {
+    background: #f8d2cd;
+  }
+
+  .card {
+    background: #f8d2cd !important;
+    border: none !important;
+  }
+
+  .card-group {
+    border-bottom: 2px solid black;
+  }
+
+  @media screen and (max-width: 768px) { 
+    .row-card {
+        width: 50% !important;
+        display: inline-flex !important;
+    }
+    .card__link {
+        font-size: 25px;
+    }
+  }

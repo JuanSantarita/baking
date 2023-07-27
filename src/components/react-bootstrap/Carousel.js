@@ -3,20 +3,20 @@ import Carousel from 'react-bootstrap/Carousel';
 
 
 function UncontrolledExample() {
-  const images = [{url:"https://iili.io/HiPTVb2.jpg",name:"Fondant 1", desc : "test1"},
-                  {url:"https://iili.io/HiPTola.jpg",name:"Fondant 2", desc:"test2"},
-                  {url:"https://iili.io/Hsk39CQ.jpg", name:"fondant 3", desc: "test3"},
-                  {url: "https://iili.io/Hsk2pZx.jpg", name:"fondant 4", desc: "test4"},
-                  {url:"https://iili.io/Hsk2mjj.jpg", name: "fondant 5", desc: "test5"},
+  const images = [{url:"https://iili.io/HQDXXa9.jpg"},
+                  {url:"https://iili.io/HQDXjyu.jpg"},
+                  {url: "https://iili.io/HQDXW37.jpg"},
+                  {url:"https://iili.io/HQDXhve.jpg"},
+                  {url: "https://iili.io/HQDXeZx.jpg"},
+                  {url:"https://iili.io/HQDXvCQ.jpg"},
                  ]; 
   return (
     
     <Carousel>
       {images.map (image => (
         <Carousel.Item>
-              <img src={image.url} width="500" class="carousel_img"/>
+              <img src={image.url} class="carousel_img"/>
               <Carousel.Caption>
-            <div class="image_name">{image.name}</div>
           </Carousel.Caption>
         </Carousel.Item>
         ))}

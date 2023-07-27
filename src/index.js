@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { browserHistory } from 'react-router'
 import "./index.css";
 import "./components/react-bootstrap/Carousel.css";
+import "./components/react-bootstrap/Card.css";
 import App from "./App";
 // import * as serviceWorker from "./serviceWorker";
 

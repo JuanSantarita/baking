@@ -1,7 +1,7 @@
 import  React, { useState } from "react";
 import "../navbar.css";
-import Nav from 'react-bootstrap/Nav';
-import {LinkContainer} from 'react-router-bootstrap'
+import {LinkContainer} from 'react-router-bootstrap';
+import Image from 'react-bootstrap/Image';
 
 function Navbar() {
   const [active, setActive] = useState("nav__menu");
@@ -19,7 +19,8 @@ function Navbar() {
   return (
     <nav className="nav"  defaultActiveKey="/home" >
       <LinkContainer to="/">
-         <a className="nav__brand">Cake + Art</a> 
+         <a className="nav__brand"><Image src="https://iili.io/HQDUVkl.jpg" roundedCircle/></a> 
+         
       </LinkContainer>
       
       <ul className={active}>
@@ -36,11 +37,6 @@ function Navbar() {
         <li className="nav__item">
           <LinkContainer to="/dessert">
             <a className="nav__link">Dessert Table</a> 
-          </LinkContainer>
-        </li>
-        <li className="nav__item">
-          <LinkContainer to="/prices">
-            <a className="nav__link">Prices</a> 
           </LinkContainer>
         </li>
       </ul>

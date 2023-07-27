@@ -13,12 +13,12 @@ body {
 li {
   list-style: none;
 }
-a {
+a.nav__link {
   text-decoration: none !important;
-    font-size: 20px;
-    color: black !important;
-    font-family: fantasy;
-    font-weight: bold;
+  font-size: 30px;
+  color: #f59793 !important;
+  font-family: cursive;
+  font-weight: bold;
 }
 
 .nav {
@@ -26,17 +26,21 @@ a {
   align-items: center;
   justify-content: space-around;
   height: 10vh;
-  background-image: url('https://iili.io/Hsv5OAb.jpg');
+  background: #f3e7db;
+
 }
 .nav__brand {
   text-transform: uppercase;
+}
+.nav__brand img {
+  width: 36%;
 }
 
 .nav__menu {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 2rem;
+  gap: 5rem;
   margin-bottom: 0;
 }
 .nav__toggler {
@@ -50,43 +54,77 @@ a {
   transition: 0.3s ease-in;
 }
 
+
+/* Active Class */
+
+
+
+/* Toggle Icon Animation */
+
 @media screen and (max-width: 768px) {
   .nav__toggler {
     display: block;
     cursor: pointer;
+    position: relative;
+    top: -37%;
   }
   .nav__menu {
     position: fixed;
-    top: 7vh;
-    right: 0;
-    height: 93vh;
-    width: 50vw;
-    background-image: url('https://iili.io/Hsv5OAb.jpg');
-    flex-direction: column;
-    transform: translateX(100%);
-    transition: 0.5s ease-in;
-
-    position: fixed;
     top: 10vh;
+    height: 30vh;
+    width: 32vw;
     right: 0;
-    height: 48vh;
-    width: 50vw;
-    background-image: url('https://iili.io/Hsv5OAb.jpg');
+    background: #f3e7db;
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
-    /* background-position-x: center; */
-    /* background-size: 350%; */
     background-repeat: round;
+    z-index: 2;
   }
-}
-/* Active Class */
-.nav__active {
-  transform: translateX(0%);
-  z-index: 2;
+  .nav__active {
+    transform: translateX(0%);
+    z-index: 2;
+    right: 3%;
+    padding: 10px;
+  }
+
+  .nav__brand {
+    display: contents;
+  } 
+  .nav__brand img {
+    width: 21%;
+    position: relative;
+    left: -8%;
+  }
+  .nav__menu {
+    gap: 1rem;
+  }
+
 }
 
-/* Toggle Icon Animation */
+@media screen and (max-width: 425px) {
+  .nav__brand img {
+    width: 28%;
+    position: relative;
+    left: -8%;
+    top: 12%;
+  }
+  a.nav__link {
+    font-size: 20px;
+  
+  }
+  .nav__menu {
+    height: 20vh;
+    width: 40vw;
+  }
+  .nav__active {
+    right: 0;
+  }
+  .nav__toggler {
+    top: -13%;
+  }
+  
+}
 
 .toggle .line1 {
   transform: rotate(-45deg) translate(-4px, 5px);
