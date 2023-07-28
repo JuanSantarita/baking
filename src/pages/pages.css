@@ -2,9 +2,72 @@
     bottom: 50%;
     position: relative;
 }
+.body__container .card {
+    background: none !important;
+    margin-left: 5px;
+}
+
+.card .card-img {
+    height: 100%;
+}
+/* .card-title{
+    font-size: 20px;
+    font-family: cursive;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.card-text {
+    font-size: 15px;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    text-align: center;
+} */
+
+.body__container {
+    background: #0dcaf0;
+}
+.body__container .header__content {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: fantasy;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.header__section {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+  }
 @media screen and (max-width: 768px) {
     .pages__container .nav__menu {
         bottom: 0;
         position: fixed;
     }
+    .body__container .header__content {
+        font-size: 40px;
+        margin-top: 80px;
+        letter-spacing: 2px;
+    }
+    .card-group {
+        padding-left: 30px;
+    }
 }
+@media screen and (max-width: 425px) {
+    .card .card-img {
+        height: 220px;
+    }
+    .body__container .header__content {
+        font-size: 25px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+    }
+    .card .card-img.dessert__img {
+        height: 150px;
+    }
+}
+

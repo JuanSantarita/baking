@@ -3,13 +3,18 @@
   }
 
   .card__link {
-    font-family: fantasy;
-    font-size: 50px;
+    font-family: math;
+    font-size: 30px;
     text-decoration: none;
     text-align: center;
     display: block;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     color: #8b414c;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: underline;
+    letter-spacing: 2px;
   }
   .card__link:hover {
     color: #8b414c;
@@ -28,6 +33,19 @@
   .card-group {
     border-bottom: 2px solid black;
   }
+.card-title{
+    font-size: 20px !important;
+    font-family: fangsong;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.card-text {
+    font-size: 15px;
+    font-family: fangsong;
+    letter-spacing: 1px;
+    text-align: center;
+}
 
   @media screen and (max-width: 768px) { 
     .row-card {
@@ -38,3 +56,15 @@
         font-size: 25px;
     }
   }
+  @media screen and (max-width: 425px) { 
+    .card-title{
+      font-size: 15px !important;
+    }
+    .card-text {
+        font-size: 10px;
+    }
+    .card__link {
+      font-size: 20px;
+    }
+  }
+  

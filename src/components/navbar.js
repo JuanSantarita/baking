@@ -1,4 +1,4 @@
-import  React, { useState } from "react";
+import  React, { useState, Suspense } from "react";
 import "../navbar.css";
 import {LinkContainer} from 'react-router-bootstrap';
 import Image from 'react-bootstrap/Image';
@@ -18,12 +18,18 @@ function Navbar() {
   };
   return (
     <nav className="nav"  defaultActiveKey="/home" >
-      <LinkContainer to="/">
+          <LinkContainer to="/">
          <a className="nav__brand"><Image src="https://iili.io/HQDUVkl.jpg" roundedCircle/></a> 
-         
       </LinkContainer>
+
+      
       
       <ul className={active}>
+      <li className="nav__item">
+          <LinkContainer to="/" className="nav__link">
+          <a className="nav__link">Home</a> 
+        </LinkContainer>
+        </li>
         <li className="nav__item">
           <LinkContainer to="/fondant" className="nav__link">
           <a className="nav__link">Fondant Cakes</a> 

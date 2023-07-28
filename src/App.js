@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Container>
-        <Row>
+        <Row className="header__section">
           <Navbar />
         </Row>
         <div class="homepage_carousel row">
